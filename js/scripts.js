@@ -11,7 +11,15 @@ $(document).ready(function () {
     filter();
 
     $(".controls .btn").on("click", function () {
-      $(".filterList").toggleClass("column-3");
+      let filterList = $(".filterList");
+
+      if (filterList.hasClass("column-3")) {
+        $(this).find(".count").text("3");
+        filterList.removeClass("column-3");
+      } else {
+        $(this).find(".count").text("6");
+        filterList.addClass("column-3");
+      }
     });
   }
 
