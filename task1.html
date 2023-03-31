@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,user-scalable=no'>
+    <title>Задание 1</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+</head>
+
+<body>
+    <div class="pageWrapper">
+        <header class="header">
+            <div class="container">
+                <div class="headerContent">
+                    <div class="logo">
+                        <a href="#"></a>
+                        <span class="logoText">Logo</span>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#" data-filter="all">All</a></li>
+                            <li><a href="#" data-filter="test_1">test 1</a></li>
+                            <li><a href="#" data-filter="test_2">test 2</a></li>
+                            <li><a href="#" data-filter="test_3">test 3</a></li>
+                            <li><a href="#" data-filter="test_4">test 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="filterList">
+                    <div class="filterItem" data-filter="test_1"> <img src="img/pic1.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_2"> <img src="img/pic2.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_3"> <img src="img/pic3.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_4"> <img src="img/pic4.jpg" alt="картинка" /> </div>
+
+                    <div class="filterItem" data-filter="test_1"> <img src="img/pic1.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_2"> <img src="img/pic2.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_3"> <img src="img/pic3.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_1"> <img src="img/pic1.jpg" alt="картинка" /> </div>
+
+                    <div class="filterItem" data-filter="test_1"> <img src="img/pic1.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_2"> <img src="img/pic2.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_3"> <img src="img/pic3.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_2"> <img src="img/pic2.jpg" alt="картинка" /> </div>
+
+                    <div class="filterItem" data-filter="test_1"> <img src="img/pic1.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_2"> <img src="img/pic2.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_3"> <img src="img/pic3.jpg" alt="картинка" /> </div>
+                    <div class="filterItem" data-filter="test_4"> <img src="img/pic4.jpg" alt="картинка" /> </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <h2 class="caption">Пояснения к задаче:</h2>
+                <p>Сетку сделал с использованием только css: <strong>через свойство columns.</strong></p>
+                <p>Минус у такого подхода: eсли блоков очень мало (когда мы фильтр переключаем) то
+                    обязатльно должно быть 2 ряда, у columns ось идет сверху вниз и слева направо. </p>
+                <p>И не так красиво анимируется. Зато без плагинов и js, чисто на css)))</p>
+                <p>Картинки специально вставил с разными высотами. Чтобы видеть работу сетки</p>
+                <p>Поведение фильтра: только <strong>стандартные jquery методы</strong>, просто добавляю класс через
+                    data атрибуты и все. </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script type='text/javascript' src='js/jquery-3.6.4.min.js'></script>
+<script type='text/javascript' src='js/scripts.js'></script>
+
+</html>

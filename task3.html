@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,user-scalable=no'>
+    <title>Задание 3</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel='stylesheet' type='text/css' href='css/selectric.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+</head>
+
+<body>
+    <div class="pageWrapper">
+        <main class="main">
+            <div class="container">
+                <form action="" class="form">
+                    <div class="inputWrapper">
+                        <input type="text" name="firstName" placeholder="Введите имя*" class="required" />
+                    </div>
+                    <div class="inputWrapper">
+                        <input type="text" name="lastName" placeholder="Введите Фамилию*" class="required" />
+                    </div>
+                    <div class="inputWrapper">
+                        <input id="emailInput" type="text" name="email" placeholder="Введите Email" />
+                    </div>
+                    <div class="inputWrapper">
+                        <select id="selectCompany" class="selectric" name="company" required>
+                            <option disabled selected="selected" value="0">Выбирите компанию</option>
+                            <option value="Google" data-id-company='r1'>Google</option>
+                            <option value="Apple" data-id-company='r2'>Apple</option>
+                        </select>
+                    </div>
+                    <div class="inputWrapper">
+                        <select id="selectPosition" class="selectric" name="position" required disabled>
+                            <option disabled selected="selected" value="0">Выбирите должность</option>
+                            <optgroup label="Google" id="r1">
+                                <option value="Дизайнер" class="r1">Дизайнер</option>
+                                <option value="Frontend разработчик" class="r1">Frontend разработчик </option>
+                                <option value="Backend разработчик" class="r1">Backend разработчик</option>
+                            </optgroup>
+                            <optgroup label="Apple" id="r2">
+                                <option value="IOS разработчик" class="r2">IOS разработчик</option>
+                                <option value="CEO" class="r2">CEO</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+
+                <div class="table">
+                    <div class="thead">
+                        <div class="th">ID </div>
+                        <div class="th">Имя </div>
+                        <div class="th">Фамилия </div>
+                        <div class="th">Email </div>
+                        <div class="th">Компания </div>
+                        <div class="th">Должность </div>
+                    </div>
+                    <div class="tbody">
+                        <div class="tr">
+                            <div class="td" data-mobile-title="ID">1</div>
+                            <div class="td" data-mobile-title="Имя">Игорь</div>
+                            <div class="td" data-mobile-title="Фамилия">Пупкин</div>
+                            <div class="td" data-mobile-title="Email">test@mail.ru</div>
+                            <div class="td" data-mobile-title="Компания">Google</div>
+                            <div class="td" data-mobile-title="Должность">Boss</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td" data-mobile-title="ID">2</div>
+                            <div class="td" data-mobile-title="Имя">Паша</div>
+                            <div class="td" data-mobile-title="Фамилия">Иванов</div>
+                            <div class="td" data-mobile-title="Email">invanov123@mail.ru</div>
+                            <div class="td" data-mobile-title="Компания">Apple</div>
+                            <div class="td" data-mobile-title="Должность">programmer </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <h2 class="caption">Пояснения к задаче:</h2>
+                <p>
+                    Использовал плагины: selectric, inputMask , validate
+                </p>
+                <p>
+
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script type='text/javascript' src='js/jquery-3.6.4.min.js'></script>
+<script type='text/javascript' src='js/jquery.selectric.min.js'></script>
+<script type='text/javascript' src='js/jquery.inputmask.min.js'></script>
+<script type='text/javascript' src='js/jquery.validate.min.js'></script>
+<script type='text/javascript' src='js/scripts.js'></script>
+
+</html>
